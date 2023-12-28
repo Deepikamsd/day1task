@@ -1,0 +1,16 @@
+FeatureHTTP/1.1HTTP/2
+Multiplexing
+Separate connections for each resource, leading to potential latency.Multiplexing allows multiple streams over a single connection, reducing latency and improving page load times.
+Header Compression
+Headers sent in plaintext, leading to overhead.Header compression (Huffman coding) reduces header size, saving bandwidth and improving data transfer.Binary Protocol
+Text-based, human-readable format.Binary protocol enhances machine parsing and processing efficiency.
+Server Push
+Clients must request each resource individually.Server push allows servers to push multiple resources to clients, reducing round-trips and improving load times.
+Prioritization
+Requests processed in the order received.Stream prioritization allows more important resources to be loaded first.
+Connection Handling
+Requires multiple connections for parallelism.Single connection supports parallel streams, reducing connection overhead.
+TLS Usage
+Optional for secure connections (HTTPS).Encourages the use of TLS, enhancing security by default.
+Adoption
+Predominant for many years, widespread use.Growing adoption, especially for performance-critical applications.
